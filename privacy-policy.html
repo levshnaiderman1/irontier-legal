@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — IronTier</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    h2 { font-size: 1.25rem; margin-top: 2.5rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+    h3 { font-size: 1rem; margin-top: 1.5rem; }
+    p, li { margin: 0.5rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    a { color: #0066cc; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    th { background: #f5f5f5; }
+    .draft-warning {
+      background: #fff8e1;
+      border-left: 4px solid #f5a623;
+      padding: 12px 16px;
+      margin-bottom: 2rem;
+      border-radius: 4px;
+    }
+    .draft-warning strong { color: #c97b00; }
+    .meta { color: #666; margin-bottom: 2rem; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 2rem 0; }
+    footer { margin-top: 3rem; color: #888; font-style: italic; font-size: 0.9rem; }
+    blockquote {
+      border-left: 4px solid #ddd;
+      margin: 1rem 0;
+      padding: 8px 16px;
+      color: #555;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy — IronTier</h1>
+
+<div class="draft-warning">
+  <strong>⚠️ DRAFT — AI-GENERATED</strong><br>
+  This document was drafted by an AI assistant based on a technical review of the IronTier codebase. It is provided as a starting point only and <strong>is not a substitute for professional legal advice.</strong> Before publishing or distributing this policy, it must be reviewed and approved by a qualified attorney. Placeholders marked with <code>[BRACKETS]</code> must be filled in by the developer before this document is treated as final.
+</div>
+
+<div class="meta">
+  <strong>Effective Date:</strong> [EFFECTIVE DATE]<br>
+  <strong>Last Updated:</strong> [EFFECTIVE DATE]
+</div>
+
+<hr>
+
+<h2>1. Introduction</h2>
+<p>Welcome to IronTier ("the App", "we", "our", or "us"). This Privacy Policy explains how <strong>[DEVELOPER NAME]</strong> collects, uses, stores, and shares information about you when you use the IronTier mobile application.</p>
+<p>By downloading or using IronTier, you agree to the terms of this Privacy Policy. If you do not agree, please do not use the App.</p>
+<p>If you have questions or concerns about this policy, contact us at <strong>[SUPPORT EMAIL]</strong>.</p>
+
+<h2>2. Who This Policy Applies To</h2>
+<p>This policy applies to all users of the IronTier mobile application, whether using the app as a guest (without an account) or as a signed-in user with a linked Google account.</p>
+
+<h2>3. Information We Collect</h2>
+
+<h3>3a. Guest Mode (No Account Required)</h3>
+<p>When you use IronTier without creating an account, <strong>all data is stored exclusively on your device</strong> using local on-device storage (SQLite). We do not transmit, collect, or have access to any of this data. This includes:</p>
+<ul>
+  <li>Workout sessions (exercise names, sets, reps, weights, dates, notes)</li>
+  <li>Personal records (best estimated 1-rep max, heaviest set, best set volume per exercise)</li>
+  <li>Routines and routine templates</li>
+  <li>Profile settings (display name, bodyweight, height, age, sex, preferred units)</li>
+  <li>Strength ranks and achievements (trophies)</li>
+</ul>
+<p>Guest-mode data remains on your device until you delete the app, perform a factory reset, or create an account and choose to migrate your data.</p>
+
+<h3>3b. Signed-In Mode (Google Sign-In)</h3>
+<p>When you create an account via Google Sign-In, the following happens:</p>
+<p><strong>From Google Sign-In, we receive:</strong></p>
+<ul>
+  <li>Your Google account identifier (a numeric user ID)</li>
+  <li>Your name (as set in your Google account)</li>
+  <li>Your email address (used solely for account identification; we do not use it for marketing)</li>
+  <li>We do <strong>not</strong> receive your Google password</li>
+</ul>
+<p><strong>You voluntarily provide and we store in the cloud (Supabase):</strong></p>
+<ul>
+  <li>Display name and username (chosen by you, visible to others if you add friends)</li>
+  <li>Bodyweight (in kg or lbs, converted to kg for storage)</li>
+  <li>Height (in cm)</li>
+  <li>Age</li>
+  <li>Sex (used only for strength standard calculations — this is health-related data; see Section 5)</li>
+  <li>Preferred units (kg/lb)</li>
+  <li>Workout history: workout names, notes, start/end times, total volume</li>
+  <li>Exercise data: sets, reps, weights, set type (warmup/working/drop/failure)</li>
+  <li>Personal records (best e1RM, heaviest set, best set volume per exercise, dates achieved)</li>
+  <li>Body measurements (if you choose to log them)</li>
+  <li>Routines and routine templates</li>
+  <li>Achievement/trophy history</li>
+</ul>
+<p><strong>Automatically collected:</strong></p>
+<ul>
+  <li>Device platform (iOS or Android), used only for authentication flow compatibility</li>
+  <li>App usage events (e.g., workout started, workout completed) are <strong>not</strong> currently collected or transmitted to any analytics service</li>
+</ul>
+
+<h2>4. How We Use Your Information</h2>
+<p>We use the information we collect to:</p>
+<ul>
+  <li>Provide core app functionality: tracking workouts, calculating personal records, displaying strength progression charts</li>
+  <li>Calculate your strength rank relative to bodyweight-adjusted standards (Brzycki formula and percentage-of-bodyweight thresholds)</li>
+  <li>Sync your data across devices when you are signed in</li>
+  <li>Enable social features (friends, groups, leaderboards) when you choose to use them</li>
+  <li>Allow account recovery if you reinstall the app on a new device</li>
+  <li>Authenticate your identity via Google Sign-In</li>
+</ul>
+<p>We do <strong>not</strong> use your data for:</p>
+<ul>
+  <li>Targeted advertising</li>
+  <li>Sale or licensing to third parties</li>
+  <li>Building behavioral profiles for external use</li>
+  <li>Any purpose unrelated to the core fitness-tracking functionality of the app</li>
+</ul>
+
+<h2>5. Social Features: Data Visible to Friends and Groups</h2>
+<p>IronTier includes optional social features (Friends and Groups). These features are entirely opt-in — you must send or accept a friend request, or join a group, for any data to be shared with other users.</p>
+<p><strong>When you are connected to another user as a friend, or share a group with them, the following summary data becomes visible to them on leaderboards:</strong></p>
+<table>
+  <thead>
+    <tr><th>Data field</th><th>Visible to friends/group members</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Display name</td><td>✅ Yes</td></tr>
+    <tr><td>Username</td><td>✅ Yes</td></tr>
+    <tr><td>Bodyweight (kg)</td><td>✅ Yes — used to calculate strength ratios</td></tr>
+    <tr><td>Sex</td><td>✅ Yes — used for strength standard comparisons</td></tr>
+    <tr><td>Best estimated 1-rep max (Squat, Bench, Deadlift, OHP, Row)</td><td>✅ Yes</td></tr>
+    <tr><td>Total workout count</td><td>✅ Yes</td></tr>
+    <tr><td>Total training volume (kg)</td><td>✅ Yes</td></tr>
+  </tbody>
+</table>
+<p><strong>What is never visible to other users:</strong></p>
+<ul>
+  <li>Per-set detail (individual set weights, reps, notes from any specific workout)</li>
+  <li>Your Google email address</li>
+  <li>Body measurements (height, specific measurement logs)</li>
+  <li>Age</li>
+  <li>Workout notes</li>
+  <li>Any data from users who are not your friends or in your groups</li>
+</ul>
+<p><strong>If you remove a friend or leave a group,</strong> they will no longer have access to your data through those social features.</p>
+<blockquote>
+  <strong>Note on sensitive data:</strong> Bodyweight and sex are health-related data points. They are shared with friends/group members as described above solely to enable comparative strength ranking. If you prefer not to share this information, you can leave the bodyweight and sex fields blank in your profile settings — this will result in rank calculations using default reference values rather than your actual data.
+</blockquote>
+
+<h2>6. Data Sharing With Third Parties</h2>
+<p>We do not sell, rent, or trade your personal information to third parties for their own commercial purposes.</p>
+<p>We share data only with the following service providers necessary to operate the App:</p>
+<p><strong>Supabase (Cloud Infrastructure &amp; Authentication)</strong></p>
+<ul>
+  <li>Provider: Supabase, Inc.</li>
+  <li>Role: Cloud database provider. All signed-in user data is stored on Supabase servers.</li>
+  <li>Data shared: All data listed in Section 3b</li>
+  <li>Supabase Privacy Policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
+</ul>
+<p><strong>Google Sign-In (Authentication)</strong></p>
+<ul>
+  <li>Provider: Google LLC</li>
+  <li>Role: Identity provider for account creation and sign-in</li>
+  <li>Data shared: We receive your Google user ID, name, and email from Google upon sign-in. We do not send your fitness data to Google.</li>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p>We may also disclose your information if required to do so by law, court order, or governmental authority, or to protect the rights, property, or safety of our users or the public.</p>
+
+<h2>7. Data Retention</h2>
+<p><strong>Guest mode:</strong> Data is stored on your device indefinitely until you delete the app or clear app data.</p>
+<p><strong>Signed-in accounts:</strong> Your data is stored on Supabase servers for as long as your account exists. If you delete your account (see Section 8), your data is permanently deleted from our servers.</p>
+<p>We do not retain data backups of deleted accounts.</p>
+
+<h2>8. Account Deletion</h2>
+<p>You can permanently delete your IronTier account and all associated data at any time:</p>
+<ol>
+  <li>Open the App</li>
+  <li>Go to <strong>Profile</strong> → <strong>Settings</strong></li>
+  <li>Tap <strong>Delete Account</strong></li>
+  <li>Confirm the deletion</li>
+</ol>
+<p><strong>This action is irreversible.</strong> Deletion removes:</p>
+<ul>
+  <li>Your profile data from our cloud servers</li>
+  <li>All workout history, sets, personal records, and routines stored in the cloud</li>
+  <li>All social connections (friendships, group memberships)</li>
+  <li>Your authentication credentials</li>
+</ul>
+<p>Local data on your device (guest or signed-in) is cleared from the app's local storage. Note that standard device backups (iCloud, Google One) may retain copies of local data separately from our servers — this is outside our control.</p>
+
+<h2>9. Security</h2>
+<p>We take reasonable technical and organizational measures to protect your data, including:</p>
+<ul>
+  <li>All data in transit is encrypted using TLS/HTTPS</li>
+  <li>Supabase enforces Row-Level Security (RLS) policies so each user can only access their own data, unless explicitly shared via the social features described in Section 5</li>
+  <li>Authentication tokens are stored in encrypted secure storage on your device (iOS Keychain / Android Keystore)</li>
+</ul>
+<p>No method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
+
+<h2>10. Children's Privacy</h2>
+<p>IronTier is not directed at children under the age of 13, and we do not knowingly collect personal information from children under 13. If you are under 13, please do not use the App or provide any personal information.</p>
+<p>If we learn that we have collected personal information from a child under 13 without verification of parental consent, we will take steps to delete that information. If you believe we may have collected information from a child under 13, please contact us at <strong>[SUPPORT EMAIL]</strong>.</p>
+
+<h2>11. International Data Transfers</h2>
+<p>If you are located outside the United States, please be aware that your data may be transferred to, stored, and processed in the United States and other countries where Supabase maintains servers. By using the App, you consent to the transfer of your information to countries which may have different data protection rules than your country.</p>
+
+<h2>12. Your Rights</h2>
+<p>Depending on your location, you may have the following rights regarding your personal data:</p>
+<ul>
+  <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+  <li><strong>Correction:</strong> Request that we correct inaccurate or incomplete data</li>
+  <li><strong>Deletion:</strong> Delete your account and all associated data (see Section 8) or contact us at <strong>[SUPPORT EMAIL]</strong></li>
+  <li><strong>Portability:</strong> Request your data in a structured, machine-readable format</li>
+  <li><strong>Objection:</strong> Object to processing of your personal data in certain circumstances</li>
+</ul>
+<p><strong>California residents (CCPA):</strong> You have the right to know what personal information we collect, the right to delete your personal information, and the right to opt-out of the sale of your personal information. We do not sell your personal information.</p>
+<p>To exercise any of these rights, contact us at <strong>[SUPPORT EMAIL]</strong>.</p>
+
+<h2>13. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this document. Continued use of the App after any such changes constitutes your acceptance of the updated policy.</p>
+<p>For material changes, we will make reasonable efforts to notify you (such as via an in-app notice).</p>
+
+<h2>14. Contact</h2>
+<p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact:</p>
+<p><strong>[DEVELOPER NAME]</strong><br>
+Email: <strong>[SUPPORT EMAIL]</strong></p>
+
+<hr>
+
+<footer>IronTier is a fitness tracking application. Nothing in this app or these policies constitutes medical advice. Always consult a qualified healthcare provider before beginning any exercise program.</footer>
+
+</body>
+</html>
