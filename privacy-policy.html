@@ -67,7 +67,7 @@
 <h2>3. Information We Collect</h2>
 
 <h3>3a. Guest Mode (No Account Required)</h3>
-<p>When you use IronTier without creating an account, <strong>all data is stored exclusively on your device</strong> using local on-device storage (SQLite). We do not transmit, collect, or have access to any of this data. This includes:</p>
+<p>When you use IronTier without creating an account, <strong>your fitness data is stored exclusively on your device</strong> using local on-device storage (SQLite). We do not transmit, collect, or have access to this fitness data. This includes:</p>
 <ul>
   <li>Workout sessions (exercise names, sets, reps, weights, dates, notes)</li>
   <li>Personal records (best estimated 1-rep max, heaviest set, best set volume per exercise)</li>
@@ -75,7 +75,8 @@
   <li>Profile settings (display name, bodyweight, height, age, sex, preferred units)</li>
   <li>Strength ranks and achievements (trophies)</li>
 </ul>
-<p>Guest-mode data remains on your device until you delete the app, perform a factory reset, or create an account and choose to migrate your data.</p>
+<p>Guest-mode fitness data remains on your device until you delete the app, perform a factory reset, or create an account and choose to migrate your data.</p>
+<blockquote><strong>Note:</strong> Anonymous analytics and crash-reporting telemetry are collected from all users, including guests — see <strong>Section 3c</strong> below. This telemetry does not include any of the fitness data listed above.</blockquote>
 
 <h3>3b. Signed-In Mode (Google Sign-In)</h3>
 <p>When you create an account via Google Sign-In, the following happens:</p>
@@ -104,9 +105,16 @@
 <p><strong>Automatically collected:</strong></p>
 <ul>
   <li>Device platform (iOS or Android), used only for authentication flow compatibility</li>
-  <li><strong>Screen views and app lifecycle events</strong> (e.g., which screens you visit, when the app is opened or brought to the foreground) — collected by PostHog, our product analytics service, to help us understand how the app is used. Individual workout entries, personal records, and other personal fitness data are not transmitted to PostHog.</li>
-  <li><strong>Crash reports and error data</strong> (e.g., JavaScript stack traces, device OS, device model, app version at the time of a crash) — collected by Sentry, our crash reporting service, to help us identify and fix stability issues. Your personal fitness data is not included in crash reports.</li>
 </ul>
+<blockquote>Analytics and crash telemetry apply to all users regardless of account status — see <strong>Section 3c</strong> below.</blockquote>
+
+<h3>3c. All Users (Guest and Signed-In)</h3>
+<p>Regardless of whether you have a signed-in account, the following data is automatically collected from all users of the App:</p>
+<ul>
+  <li><strong>Screen views and app lifecycle events</strong> (e.g., which screens you visit, when the app is opened or brought to the foreground) — collected by PostHog, our product analytics service, to help us understand how the App is used and improve it.</li>
+  <li><strong>Crash reports and error data</strong> (e.g., JavaScript stack traces, device OS, device model, app version at the time of a crash or error) — collected by Sentry, our crash reporting service, to help us identify and fix stability issues.</li>
+</ul>
+<p>This telemetry does not include your personal fitness data (workouts, personal records, body measurements, profile fields, etc.).</p>
 
 <h2>4. How We Use Your Information</h2>
 <p>We use the information we collect to:</p>
@@ -236,6 +244,7 @@
   <li><strong>Deletion:</strong> Delete your account and all associated data (see Section 8) or contact us at <strong>irontier.support@gmail.com</strong></li>
   <li><strong>Portability:</strong> Request your data in a structured, machine-readable format</li>
   <li><strong>Objection:</strong> Object to processing of your personal data in certain circumstances</li>
+  <li><strong>Complaint:</strong> Lodge a complaint with the data protection supervisory authority in your country of residence if you believe we have processed your personal data in violation of applicable law.</li>
 </ul>
 <p><strong>California residents (CCPA):</strong> You have the right to know what personal information we collect, the right to delete your personal information, and the right to opt-out of the sale of your personal information. We do not sell your personal information.</p>
 <p>To exercise any of these rights, contact us at <strong>irontier.support@gmail.com</strong>.</p>
