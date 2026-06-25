@@ -48,10 +48,6 @@
 
 <h1>Privacy Policy — IronTier</h1>
 
-<div class="draft-warning">
-  <strong>⚠️ DRAFT — AI-GENERATED</strong><br>
-  This document was drafted by an AI assistant based on a technical review of the IronTier codebase. It is provided as a starting point only and <strong>is not a substitute for professional legal advice.</strong> Before publishing or distributing this policy, it must be reviewed and approved by a qualified attorney. Placeholders marked with <code>[BRACKETS]</code> must be filled in by the developer before this document is treated as final.
-</div>
 
 <div class="meta">
   <strong>Effective Date:</strong> 2026-06-25<br>
@@ -108,7 +104,8 @@
 <p><strong>Automatically collected:</strong></p>
 <ul>
   <li>Device platform (iOS or Android), used only for authentication flow compatibility</li>
-  <li>App usage events (e.g., workout started, workout completed) are <strong>not</strong> currently collected or transmitted to any analytics service</li>
+  <li><strong>Screen views and app lifecycle events</strong> (e.g., which screens you visit, when the app is opened or brought to the foreground) — collected by PostHog, our product analytics service, to help us understand how the app is used. Individual workout entries, personal records, and other personal fitness data are not transmitted to PostHog.</li>
+  <li><strong>Crash reports and error data</strong> (e.g., JavaScript stack traces, device OS, device model, app version at the time of a crash) — collected by Sentry, our crash reporting service, to help us identify and fix stability issues. Your personal fitness data is not included in crash reports.</li>
 </ul>
 
 <h2>4. How We Use Your Information</h2>
@@ -176,6 +173,20 @@
   <li>Role: Identity provider for account creation and sign-in</li>
   <li>Data shared: We receive your Google user ID, name, and email from Google upon sign-in. We do not send your fitness data to Google.</li>
   <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>PostHog (Product Analytics)</strong></p>
+<ul>
+  <li>Provider: PostHog, Inc.</li>
+  <li>Role: Product analytics. Collects screen view events and app lifecycle data (app opened, foregrounded, backgrounded) to help us understand how users navigate the App and improve it.</li>
+  <li>Data shared: Screen names visited, app lifecycle events, and anonymous device identifiers. Your personal fitness data (workouts, personal records, body measurements, etc.) is not sent to PostHog.</li>
+  <li>PostHog Privacy Policy: <a href="https://posthog.com/privacy">https://posthog.com/privacy</a></li>
+</ul>
+<p><strong>Sentry (Crash Reporting &amp; Error Monitoring)</strong></p>
+<ul>
+  <li>Provider: Functional Software, Inc. (Sentry)</li>
+  <li>Role: Crash reporting and error monitoring. Captures crash details and JavaScript errors to help us diagnose and fix stability issues.</li>
+  <li>Data shared: JavaScript error stack traces, device OS, device model, app version at the time of a crash or error. Your personal fitness data is not included in crash reports.</li>
+  <li>Sentry Privacy Policy: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></li>
 </ul>
 <p>We may also disclose your information if required to do so by law, court order, or governmental authority, or to protect the rights, property, or safety of our users or the public.</p>
 
